@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/gambarWayang"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="8dp"
+        android:src="@drawable/android"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/namaWayang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:textStyle="bold"
+        android:text="namaWayang"
+        app:layout_constraintStart_toEndOf="@+id/gambarWayang"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/karakterWayang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="karakterWayang"
+        app:layout_constraintStart_toEndOf="@+id/gambarWayang"
+        app:layout_constraintTop_toBottomOf="@id/namaWayang" />
+
+    <TextView
+        android:id="@+id/deskripsiWayang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="24dp"
+        android:text="deskripsiWayang"
+        app:layout_constraintStart_toEndOf="@+id/gambarWayang"
+        app:layout_constraintTop_toBottomOf="@id/karakterWayang" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
