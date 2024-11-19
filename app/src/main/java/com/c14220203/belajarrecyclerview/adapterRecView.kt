@@ -14,7 +14,7 @@ import com.squareup.picasso.Picasso
 class adapterRecView (private val listWayang: ArrayList<wayang>) : RecyclerView
 .Adapter<adapterRecView.ListViewHolder>() {
 
-    private lateinit var onItemClickCallback: OnItemClickCallback
+    private lateinit var onItemClickCallback : OnItemClickCallback
 
     interface OnItemClickCallback {
         fun onItemClicked(data: wayang)
