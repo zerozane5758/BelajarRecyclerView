@@ -19,7 +19,7 @@ class adapterRecView (private val listWayang: ArrayList<wayang>) : RecyclerView
     interface OnItemClickCallback {
         fun onItemClicked(data: wayang)
 
-        fun delData(pos: Int)
+        fun delData(pos: Int) //
     }
 
     fun setOnItemClickCallback(onItemClickCallback: OnItemClickCallback) {
